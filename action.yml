@@ -1,15 +1,12 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Sample - login'
+description: 'Login to to tenant using Office 365 CLI'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  ADMIN_USERNAME:  
+    description: 'Username (email address) of the admin'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  ADMIN_PASSWORD:  
+    description: 'Password of the admin'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
