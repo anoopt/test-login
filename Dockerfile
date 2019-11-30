@@ -1,5 +1,8 @@
 # Container image that runs your code
-FROM alpine:3.10
+FROM node:10
+
+# Install Office 365 CLI
+RUN npm i -g @pnp/office365-cli
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
