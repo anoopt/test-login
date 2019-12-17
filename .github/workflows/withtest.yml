@@ -1,6 +1,6 @@
 name: Office 365 CLI Login (with)
 
-on: [pull_request]
+on: [push]
 
 jobs:
   deploy:
