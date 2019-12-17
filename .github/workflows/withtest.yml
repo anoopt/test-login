@@ -13,4 +13,4 @@ jobs:
       uses: ./
       with:
         admin_username:  ${{ secrets.adminUsername }}
-        addmin_password:  ${{ secrets.adminPassword }}
+        admin_password:  ${{ secrets.adminPassword }}
